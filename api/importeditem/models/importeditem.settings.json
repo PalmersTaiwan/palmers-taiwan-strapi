@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "importeditems",
   "info": {
-    "name": "importeditem"
+    "name": "Imported Item"
   },
   "options": {
     "timestamps": true,
