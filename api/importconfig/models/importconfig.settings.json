@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "importconfigs",
   "info": {
-    "name": "importconfig"
+    "name": "Import Config"
   },
   "options": {
     "timestamps": true,
