@@ -591,6 +591,9 @@
                 }
               }
             }
+          },
+          "slug": {
+            "type": "string"
           }
         }
       },
@@ -600,6 +603,9 @@
             "type": "string"
           },
           "description": {
+            "type": "string"
+          },
+          "slug": {
             "type": "string"
           }
         }
