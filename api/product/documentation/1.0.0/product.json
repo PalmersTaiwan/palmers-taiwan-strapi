@@ -594,6 +594,9 @@
           },
           "slug": {
             "type": "string"
+          },
+          "pid": {
+            "type": "uid"
           }
         }
       },
@@ -607,6 +610,9 @@
           },
           "slug": {
             "type": "string"
+          },
+          "pid": {
+            "type": "uid"
           }
         }
       }

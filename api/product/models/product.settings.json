@@ -28,6 +28,10 @@
     },
     "slug": {
       "type": "string"
+    },
+    "pid": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
