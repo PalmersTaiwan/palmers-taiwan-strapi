@@ -26,12 +26,61 @@
       "plugin": "upload",
       "required": false
     },
-    "slug": {
+    "videos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "price": {
+      "type": "integer"
+    },
+    "ingredients": {
+      "type": "richtext"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "barcode": {
       "type": "string"
     },
     "pid": {
       "type": "uid",
-      "targetField": "name"
+      "targetField": "sku"
+    },
+    "purposes": {
+      "type": "richtext"
+    },
+    "uses": {
+      "type": "richtext"
+    },
+    "warning": {
+      "type": "richtext"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "specifications": {
+      "type": "dynamiczone",
+      "components": [
+        "product.specifications"
+      ]
+    },
+    "slides": {
+      "type": "dynamiczone",
+      "components": [
+        "product.slides"
+      ]
+    },
+    "categories": {
+      "via": "products",
+      "collection": "category",
+      "dominant": true
     }
   }
 }

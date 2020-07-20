@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/categories": {
+    "/orders": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Category"
+                    "$ref": "#/components/schemas/Order"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Category"
+          "Order"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Category"
+                  "$ref": "#/components/schemas/Order"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Category"
+          "Order"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategory"
+                "$ref": "#/components/schemas/NewOrder"
               }
             }
           }
         }
       }
     },
-    "/categories/count": {
+    "/orders/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Category"
+          "Order"
         ],
         "parameters": []
       }
     },
-    "/categories/{id}": {
+    "/orders/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Category"
+                  "$ref": "#/components/schemas/Order"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Category"
+          "Order"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Category"
+                  "$ref": "#/components/schemas/Order"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Category"
+          "Order"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategory"
+                "$ref": "#/components/schemas/NewOrder"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Category"
+          "Order"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Category": {
+      "Order": {
         "required": [
           "id"
         ],
@@ -522,161 +522,69 @@
           "id": {
             "type": "string"
           },
-          "name": {
+          "county": {
             "type": "string"
           },
-          "description": {
+          "township": {
             "type": "string"
           },
-          "images": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                }
-              }
-            }
+          "street": {
+            "type": "string"
           },
-          "products": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "videos": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "price": {
-                  "type": "integer"
-                },
-                "ingredients": {
-                  "type": "string"
-                },
-                "sku": {
-                  "type": "string"
-                },
-                "barcode": {
-                  "type": "string"
-                },
-                "pid": {
-                  "type": "uid"
-                },
-                "purposes": {
-                  "type": "string"
-                },
-                "uses": {
-                  "type": "string"
-                },
-                "warning": {
-                  "type": "string"
-                },
-                "origin": {
-                  "type": "string"
-                },
-                "specifications": {
-                  "type": "dynamiczone"
-                },
-                "slides": {
-                  "type": "dynamiczone"
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
+          "lane": {
+            "type": "string"
+          },
+          "alley": {
+            "type": "string"
+          },
+          "number": {
+            "type": "string"
+          },
+          "floor": {
+            "type": "string"
+          },
+          "zip": {
+            "type": "string"
+          },
+          "items": {
+            "type": "object"
+          },
+          "amount": {
+            "type": "integer"
           }
         }
       },
-      "NewCategory": {
+      "NewOrder": {
         "properties": {
-          "name": {
+          "county": {
             "type": "string"
           },
-          "description": {
+          "township": {
             "type": "string"
           },
-          "products": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "street": {
+            "type": "string"
+          },
+          "lane": {
+            "type": "string"
+          },
+          "alley": {
+            "type": "string"
+          },
+          "number": {
+            "type": "string"
+          },
+          "floor": {
+            "type": "string"
+          },
+          "zip": {
+            "type": "string"
+          },
+          "items": {
+            "type": "object"
+          },
+          "amount": {
+            "type": "integer"
           }
         }
       }
@@ -684,7 +592,7 @@
   },
   "tags": [
     {
-      "name": "Category"
+      "name": "Order"
     }
   ]
 }
