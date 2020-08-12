@@ -1,0 +1,16 @@
+{
+  "kind": "singleType",
+  "collectionName": "returns",
+  "info": {
+    "name": "return"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
