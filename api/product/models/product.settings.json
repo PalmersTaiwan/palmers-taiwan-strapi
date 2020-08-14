@@ -44,17 +44,18 @@
       "type": "richtext"
     },
     "sku": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "barcode": {
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     },
     "pid": {
       "type": "uid",
       "targetField": "sku"
-    },
-    "purposes": {
-      "type": "richtext"
     },
     "uses": {
       "type": "richtext"
@@ -65,12 +66,6 @@
     "origin": {
       "type": "string"
     },
-    "specifications": {
-      "type": "dynamiczone",
-      "components": [
-        "product.specifications"
-      ]
-    },
     "slides": {
       "type": "dynamiczone",
       "components": [
@@ -78,9 +73,41 @@
       ]
     },
     "categories": {
-      "via": "products",
       "collection": "category",
+      "via": "products",
       "dominant": true
+    },
+    "collections": {
+      "collection": "collection",
+      "via": "products",
+      "dominant": true
+    },
+    "details": {
+      "type": "richtext"
+    },
+    "directions": {
+      "type": "richtext"
+    },
+    "expiration": {
+      "type": "string"
+    },
+    "storage": {
+      "type": "richtext"
+    },
+    "volume_ml": {
+      "type": "decimal"
+    },
+    "volume_g": {
+      "type": "decimal"
+    },
+    "length_cm": {
+      "type": "decimal"
+    },
+    "width_cm": {
+      "type": "decimal"
+    },
+    "height_cm": {
+      "type": "decimal"
     }
   }
 }

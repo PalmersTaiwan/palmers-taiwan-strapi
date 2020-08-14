@@ -320,12 +320,42 @@
           },
           "title": {
             "type": "string"
+          },
+          "title_ConsumerProtectionAct": {
+            "type": "string"
+          },
+          "consumerProtectionAct": {
+            "type": "string"
+          },
+          "title_privacyPolicy": {
+            "type": "string"
+          },
+          "privacyPolicy": {
+            "type": "string"
+          },
+          "pageDescription": {
+            "type": "string"
           }
         }
       },
       "NewTerms": {
         "properties": {
           "title": {
+            "type": "string"
+          },
+          "title_ConsumerProtectionAct": {
+            "type": "string"
+          },
+          "consumerProtectionAct": {
+            "type": "string"
+          },
+          "title_privacyPolicy": {
+            "type": "string"
+          },
+          "privacyPolicy": {
+            "type": "string"
+          },
+          "pageDescription": {
             "type": "string"
           }
         }

@@ -1244,6 +1244,52 @@
                 }
               }
             }
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "county": {
+                  "type": "string"
+                },
+                "township": {
+                  "type": "string"
+                },
+                "street": {
+                  "type": "string"
+                },
+                "lane": {
+                  "type": "string"
+                },
+                "alley": {
+                  "type": "string"
+                },
+                "number": {
+                  "type": "string"
+                },
+                "floor": {
+                  "type": "string"
+                },
+                "zip": {
+                  "type": "string"
+                },
+                "items": {
+                  "type": "object"
+                },
+                "amount": {
+                  "type": "integer"
+                },
+                "user": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1281,6 +1327,12 @@
           },
           "role": {
             "type": "string"
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

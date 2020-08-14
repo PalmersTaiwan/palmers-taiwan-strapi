@@ -11,6 +11,21 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "title_ConsumerProtectionAct": {
+      "type": "string"
+    },
+    "consumerProtectionAct": {
+      "type": "richtext"
+    },
+    "title_privacyPolicy": {
+      "type": "string"
+    },
+    "privacyPolicy": {
+      "type": "richtext"
+    },
+    "pageDescription": {
+      "type": "richtext"
     }
   }
 }

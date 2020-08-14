@@ -38,6 +38,11 @@
     },
     "amount": {
       "type": "integer"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "orders"
     }
   }
 }

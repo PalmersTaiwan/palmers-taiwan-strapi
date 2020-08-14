@@ -596,7 +596,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "sku",
+                "barcode"
               ],
               "properties": {
                 "id": {
@@ -635,9 +637,6 @@
                 "pid": {
                   "type": "uid"
                 },
-                "purposes": {
-                  "type": "string"
-                },
                 "uses": {
                   "type": "string"
                 },
@@ -647,9 +646,6 @@
                 "origin": {
                   "type": "string"
                 },
-                "specifications": {
-                  "type": "dynamiczone"
-                },
                 "slides": {
                   "type": "dynamiczone"
                 },
@@ -658,6 +654,39 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "collections": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "details": {
+                  "type": "string"
+                },
+                "directions": {
+                  "type": "string"
+                },
+                "expiration": {
+                  "type": "string"
+                },
+                "storage": {
+                  "type": "string"
+                },
+                "volume_ml": {
+                  "type": "number"
+                },
+                "volume_g": {
+                  "type": "number"
+                },
+                "length_cm": {
+                  "type": "number"
+                },
+                "width_cm": {
+                  "type": "number"
+                },
+                "height_cm": {
+                  "type": "number"
                 }
               }
             }

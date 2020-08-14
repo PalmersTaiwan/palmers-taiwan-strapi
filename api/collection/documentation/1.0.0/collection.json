@@ -591,6 +591,105 @@
                 }
               }
             }
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "sku",
+                "barcode"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "videos": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "price": {
+                  "type": "integer"
+                },
+                "ingredients": {
+                  "type": "string"
+                },
+                "sku": {
+                  "type": "string"
+                },
+                "barcode": {
+                  "type": "string"
+                },
+                "pid": {
+                  "type": "uid"
+                },
+                "uses": {
+                  "type": "string"
+                },
+                "warning": {
+                  "type": "string"
+                },
+                "origin": {
+                  "type": "string"
+                },
+                "slides": {
+                  "type": "dynamiczone"
+                },
+                "categories": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "collections": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "details": {
+                  "type": "string"
+                },
+                "directions": {
+                  "type": "string"
+                },
+                "expiration": {
+                  "type": "string"
+                },
+                "storage": {
+                  "type": "string"
+                },
+                "volume_ml": {
+                  "type": "number"
+                },
+                "volume_g": {
+                  "type": "number"
+                },
+                "length_cm": {
+                  "type": "number"
+                },
+                "width_cm": {
+                  "type": "number"
+                },
+                "height_cm": {
+                  "type": "number"
+                }
+              }
+            }
           }
         }
       },
@@ -601,6 +700,12 @@
           },
           "description": {
             "type": "string"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }

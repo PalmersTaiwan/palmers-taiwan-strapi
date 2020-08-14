@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/orders": {
+    "/news-feed": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the news-feed's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve news-feed document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Order"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "News-feed"
         ],
         "parameters": [
           {
@@ -192,81 +193,18 @@
           }
         ]
       },
-      "post": {
+      "put": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Update a single news-feed record",
         "responses": {
           "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Order"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Order"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewOrder"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/orders/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
+            "description": "Retrieve news-feed document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,122 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Order"
-        ],
-        "parameters": []
-      }
-    },
-    "/orders/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Order"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Order"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Order"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Order"
+          "News-feed"
         ],
         "requestBody": {
           "description": "",
@@ -429,30 +252,19 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOrder"
+                "$ref": "#/components/schemas/NewNews-feed"
               }
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single news-feed record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single news-feed based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,26 +307,15 @@
         },
         "summary": "",
         "tags": [
-          "Order"
+          "News-feed"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       }
     }
   },
   "components": {
     "schemas": {
-      "Order": {
+      "News-feed": {
         "required": [
           "id"
         ],
@@ -522,122 +323,19 @@
           "id": {
             "type": "string"
           },
-          "county": {
+          "title": {
             "type": "string"
-          },
-          "township": {
-            "type": "string"
-          },
-          "street": {
-            "type": "string"
-          },
-          "lane": {
-            "type": "string"
-          },
-          "alley": {
-            "type": "string"
-          },
-          "number": {
-            "type": "string"
-          },
-          "floor": {
-            "type": "string"
-          },
-          "zip": {
-            "type": "string"
-          },
-          "items": {
-            "type": "object"
-          },
-          "amount": {
-            "type": "integer"
-          },
-          "user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "orders": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
           }
         }
       },
-      "NewOrder": {
+      "NewNews-feed": {
         "properties": {
-          "county": {
-            "type": "string"
-          },
-          "township": {
-            "type": "string"
-          },
-          "street": {
-            "type": "string"
-          },
-          "lane": {
-            "type": "string"
-          },
-          "alley": {
-            "type": "string"
-          },
-          "number": {
-            "type": "string"
-          },
-          "floor": {
-            "type": "string"
-          },
-          "zip": {
-            "type": "string"
-          },
-          "items": {
-            "type": "object"
-          },
-          "amount": {
-            "type": "integer"
-          },
-          "user": {
+          "title": {
             "type": "string"
           }
         }
       }
     }
   },
-  "tags": [
-    {
-      "name": "Order"
-    }
-  ]
+  "tags": []
 }
