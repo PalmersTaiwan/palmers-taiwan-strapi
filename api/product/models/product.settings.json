@@ -9,68 +9,14 @@
     "timestamps": true
   },
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "description": {
-      "type": "richtext"
-    },
-    "images": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "videos": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "price": {
-      "type": "integer"
-    },
-    "ingredients": {
-      "type": "richtext"
-    },
     "sku": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "barcode": {
-      "type": "string",
-      "unique": true,
-      "required": true
-    },
-    "pid": {
-      "type": "uid",
-      "targetField": "sku"
-    },
-    "uses": {
-      "type": "richtext"
-    },
-    "warning": {
-      "type": "richtext"
-    },
-    "origin": {
       "type": "string"
     },
-    "slides": {
-      "type": "dynamiczone",
-      "components": [
-        "product.slides"
-      ]
+    "brand": {
+      "type": "string"
+    },
+    "category_code": {
+      "type": "string"
     },
     "categories": {
       "collection": "category",
@@ -82,32 +28,92 @@
       "via": "products",
       "dominant": true
     },
-    "details": {
-      "type": "richtext"
+    "now_available": {
+      "type": "boolean"
     },
-    "directions": {
-      "type": "richtext"
+    "name": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "barcode": {
+      "type": "string"
+    },
+    "measurement": {
+      "type": "string"
+    },
+    "p_length": {
+      "type": "decimal"
+    },
+    "p_width": {
+      "type": "decimal"
+    },
+    "p_height": {
+      "type": "decimal"
+    },
+    "box_length": {
+      "type": "decimal"
+    },
+    "box_width": {
+      "type": "decimal"
+    },
+    "box_depth": {
+      "type": "decimal"
+    },
+    "p_weight": {
+      "type": "decimal"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "manufacture": {
+      "type": "string"
+    },
+    "importer": {
+      "type": "string"
+    },
+    "price_ntd": {
+      "type": "integer"
     },
     "expiration": {
       "type": "string"
     },
+    "ingredient": {
+      "type": "richtext"
+    },
+    "store_code": {
+      "type": "string"
+    },
+    "price_no_tax": {
+      "type": "decimal"
+    },
+    "price_whoesale": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "detail": {
+      "type": "richtext"
+    },
+    "feature": {
+      "type": "richtext"
+    },
+    "skin_type": {
+      "type": "richtext"
+    },
+    "uses": {
+      "type": "richtext"
+    },
+    "direction": {
+      "type": "richtext"
+    },
     "storage": {
       "type": "richtext"
     },
-    "volume_ml": {
-      "type": "decimal"
-    },
-    "volume_g": {
-      "type": "decimal"
-    },
-    "length_cm": {
-      "type": "decimal"
-    },
-    "width_cm": {
-      "type": "decimal"
-    },
-    "height_cm": {
-      "type": "decimal"
+    "warning": {
+      "type": "richtext"
     }
   }
 }

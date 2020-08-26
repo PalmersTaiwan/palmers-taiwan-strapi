@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/14/2020 2:18:04 PM"
+    "x-generation-date": "08/26/2020 5:42:28 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -348,6 +348,318 @@
         "summary": "",
         "tags": [
           "About"
+        ],
+        "parameters": []
+      }
+    },
+    "/category-static": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the category-static's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve category-static document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Category-static"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single category-static record",
+        "responses": {
+          "200": {
+            "description": "Retrieve category-static document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Category-static"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCategory-static"
+              }
+            }
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single category-static record",
+        "responses": {
+          "200": {
+            "description": "deletes a single category-static based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Category-static"
         ],
         "parameters": []
       }
@@ -1372,6 +1684,318 @@
             }
           }
         ]
+      }
+    },
+    "/collections-static": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the collections-static's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve collections-static document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Collections-static"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single collections-static record",
+        "responses": {
+          "200": {
+            "description": "Retrieve collections-static document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Collections-static"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCollections-static"
+              }
+            }
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single collections-static record",
+        "responses": {
+          "200": {
+            "description": "deletes a single collections-static based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Collections-static"
+        ],
+        "parameters": []
       }
     },
     "/contact-us": {
@@ -3325,6 +3949,318 @@
             }
           }
         ]
+      }
+    },
+    "/products-stactic": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the products-stactic's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve products-stactic document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Products-stactic"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single products-stactic record",
+        "responses": {
+          "200": {
+            "description": "Retrieve products-stactic document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Products-stactic"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewProducts-stactic"
+              }
+            }
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single products-stactic record",
+        "responses": {
+          "200": {
+            "description": "deletes a single products-stactic based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Products-stactic"
+        ],
+        "parameters": []
       }
     },
     "/return": {
@@ -6119,6 +7055,26 @@
           }
         }
       },
+      "Category-static": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "NewCategory-static": {
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        }
+      },
       "Category": {
         "required": [
           "id"
@@ -6201,58 +7157,20 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "sku",
-                "barcode"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "videos": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "price": {
-                  "type": "integer"
-                },
-                "ingredients": {
-                  "type": "string"
-                },
                 "sku": {
                   "type": "string"
                 },
-                "barcode": {
+                "brand": {
                   "type": "string"
                 },
-                "pid": {
-                  "type": "uid"
-                },
-                "uses": {
+                "category_code": {
                   "type": "string"
-                },
-                "warning": {
-                  "type": "string"
-                },
-                "origin": {
-                  "type": "string"
-                },
-                "slides": {
-                  "type": "dynamiczone"
                 },
                 "categories": {
                   "type": "array",
@@ -6266,32 +7184,92 @@
                     "type": "string"
                   }
                 },
-                "details": {
+                "now_available": {
+                  "type": "boolean"
+                },
+                "name": {
                   "type": "string"
                 },
-                "directions": {
+                "name_en": {
                   "type": "string"
+                },
+                "barcode": {
+                  "type": "string"
+                },
+                "measurement": {
+                  "type": "string"
+                },
+                "p_length": {
+                  "type": "number"
+                },
+                "p_width": {
+                  "type": "number"
+                },
+                "p_height": {
+                  "type": "number"
+                },
+                "box_length": {
+                  "type": "number"
+                },
+                "box_width": {
+                  "type": "number"
+                },
+                "box_depth": {
+                  "type": "number"
+                },
+                "p_weight": {
+                  "type": "number"
+                },
+                "origin": {
+                  "type": "string"
+                },
+                "manufacture": {
+                  "type": "string"
+                },
+                "importer": {
+                  "type": "string"
+                },
+                "price_ntd": {
+                  "type": "integer"
                 },
                 "expiration": {
+                  "type": "string"
+                },
+                "ingredient": {
+                  "type": "string"
+                },
+                "store_code": {
+                  "type": "string"
+                },
+                "price_no_tax": {
+                  "type": "number"
+                },
+                "price_whoesale": {
+                  "type": "number"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "detail": {
+                  "type": "string"
+                },
+                "feature": {
+                  "type": "string"
+                },
+                "skin_type": {
+                  "type": "string"
+                },
+                "uses": {
+                  "type": "string"
+                },
+                "direction": {
                   "type": "string"
                 },
                 "storage": {
                   "type": "string"
                 },
-                "volume_ml": {
-                  "type": "number"
-                },
-                "volume_g": {
-                  "type": "number"
-                },
-                "length_cm": {
-                  "type": "number"
-                },
-                "width_cm": {
-                  "type": "number"
-                },
-                "height_cm": {
-                  "type": "number"
+                "warning": {
+                  "type": "string"
                 }
               }
             }
@@ -6396,58 +7374,20 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "sku",
-                "barcode"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "videos": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "price": {
-                  "type": "integer"
-                },
-                "ingredients": {
-                  "type": "string"
-                },
                 "sku": {
                   "type": "string"
                 },
-                "barcode": {
+                "brand": {
                   "type": "string"
                 },
-                "pid": {
-                  "type": "uid"
-                },
-                "uses": {
+                "category_code": {
                   "type": "string"
-                },
-                "warning": {
-                  "type": "string"
-                },
-                "origin": {
-                  "type": "string"
-                },
-                "slides": {
-                  "type": "dynamiczone"
                 },
                 "categories": {
                   "type": "array",
@@ -6461,32 +7401,92 @@
                     "type": "string"
                   }
                 },
-                "details": {
+                "now_available": {
+                  "type": "boolean"
+                },
+                "name": {
                   "type": "string"
                 },
-                "directions": {
+                "name_en": {
                   "type": "string"
+                },
+                "barcode": {
+                  "type": "string"
+                },
+                "measurement": {
+                  "type": "string"
+                },
+                "p_length": {
+                  "type": "number"
+                },
+                "p_width": {
+                  "type": "number"
+                },
+                "p_height": {
+                  "type": "number"
+                },
+                "box_length": {
+                  "type": "number"
+                },
+                "box_width": {
+                  "type": "number"
+                },
+                "box_depth": {
+                  "type": "number"
+                },
+                "p_weight": {
+                  "type": "number"
+                },
+                "origin": {
+                  "type": "string"
+                },
+                "manufacture": {
+                  "type": "string"
+                },
+                "importer": {
+                  "type": "string"
+                },
+                "price_ntd": {
+                  "type": "integer"
                 },
                 "expiration": {
+                  "type": "string"
+                },
+                "ingredient": {
+                  "type": "string"
+                },
+                "store_code": {
+                  "type": "string"
+                },
+                "price_no_tax": {
+                  "type": "number"
+                },
+                "price_whoesale": {
+                  "type": "number"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "detail": {
+                  "type": "string"
+                },
+                "feature": {
+                  "type": "string"
+                },
+                "skin_type": {
+                  "type": "string"
+                },
+                "uses": {
+                  "type": "string"
+                },
+                "direction": {
                   "type": "string"
                 },
                 "storage": {
                   "type": "string"
                 },
-                "volume_ml": {
-                  "type": "number"
-                },
-                "volume_g": {
-                  "type": "number"
-                },
-                "length_cm": {
-                  "type": "number"
-                },
-                "width_cm": {
-                  "type": "number"
-                },
-                "height_cm": {
-                  "type": "number"
+                "warning": {
+                  "type": "string"
                 }
               }
             }
@@ -6506,6 +7506,26 @@
             "items": {
               "type": "string"
             }
+          }
+        }
+      },
+      "Collections-static": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "NewCollections-static": {
+        "properties": {
+          "name": {
+            "type": "string"
           }
         }
       },
@@ -6690,9 +7710,287 @@
       },
       "Product": {
         "required": [
-          "id",
-          "sku",
-          "barcode"
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "sku": {
+            "type": "string"
+          },
+          "brand": {
+            "type": "string"
+          },
+          "category_code": {
+            "type": "string"
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "products": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "collections": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "products": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "now_available": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "name_en": {
+            "type": "string"
+          },
+          "barcode": {
+            "type": "string"
+          },
+          "measurement": {
+            "type": "string"
+          },
+          "p_length": {
+            "type": "number"
+          },
+          "p_width": {
+            "type": "number"
+          },
+          "p_height": {
+            "type": "number"
+          },
+          "box_length": {
+            "type": "number"
+          },
+          "box_width": {
+            "type": "number"
+          },
+          "box_depth": {
+            "type": "number"
+          },
+          "p_weight": {
+            "type": "number"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "manufacture": {
+            "type": "string"
+          },
+          "importer": {
+            "type": "string"
+          },
+          "price_ntd": {
+            "type": "integer"
+          },
+          "expiration": {
+            "type": "string"
+          },
+          "ingredient": {
+            "type": "string"
+          },
+          "store_code": {
+            "type": "string"
+          },
+          "price_no_tax": {
+            "type": "number"
+          },
+          "price_whoesale": {
+            "type": "number"
+          },
+          "description": {
+            "type": "string"
+          },
+          "detail": {
+            "type": "string"
+          },
+          "feature": {
+            "type": "string"
+          },
+          "skin_type": {
+            "type": "string"
+          },
+          "uses": {
+            "type": "string"
+          },
+          "direction": {
+            "type": "string"
+          },
+          "storage": {
+            "type": "string"
+          },
+          "warning": {
+            "type": "string"
+          }
+        }
+      },
+      "NewProduct": {
+        "properties": {
+          "sku": {
+            "type": "string"
+          },
+          "brand": {
+            "type": "string"
+          },
+          "category_code": {
+            "type": "string"
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "collections": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "now_available": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "name_en": {
+            "type": "string"
+          },
+          "barcode": {
+            "type": "string"
+          },
+          "measurement": {
+            "type": "string"
+          },
+          "p_length": {
+            "type": "number"
+          },
+          "p_width": {
+            "type": "number"
+          },
+          "p_height": {
+            "type": "number"
+          },
+          "box_length": {
+            "type": "number"
+          },
+          "box_width": {
+            "type": "number"
+          },
+          "box_depth": {
+            "type": "number"
+          },
+          "p_weight": {
+            "type": "number"
+          },
+          "origin": {
+            "type": "string"
+          },
+          "manufacture": {
+            "type": "string"
+          },
+          "importer": {
+            "type": "string"
+          },
+          "price_ntd": {
+            "type": "integer"
+          },
+          "expiration": {
+            "type": "string"
+          },
+          "ingredient": {
+            "type": "string"
+          },
+          "store_code": {
+            "type": "string"
+          },
+          "price_no_tax": {
+            "type": "number"
+          },
+          "price_whoesale": {
+            "type": "number"
+          },
+          "description": {
+            "type": "string"
+          },
+          "detail": {
+            "type": "string"
+          },
+          "feature": {
+            "type": "string"
+          },
+          "skin_type": {
+            "type": "string"
+          },
+          "uses": {
+            "type": "string"
+          },
+          "direction": {
+            "type": "string"
+          },
+          "storage": {
+            "type": "string"
+          },
+          "warning": {
+            "type": "string"
+          }
+        }
+      },
+      "Products-stactic": {
+        "required": [
+          "id"
         ],
         "properties": {
           "id": {
@@ -6700,501 +7998,13 @@
           },
           "name": {
             "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "images": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "videos": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "price": {
-            "type": "integer"
-          },
-          "ingredients": {
-            "type": "string"
-          },
-          "sku": {
-            "type": "string"
-          },
-          "barcode": {
-            "type": "string"
-          },
-          "pid": {
-            "type": "uid"
-          },
-          "uses": {
-            "type": "string"
-          },
-          "warning": {
-            "type": "string"
-          },
-          "origin": {
-            "type": "string"
-          },
-          "slides": {
-            "type": "array",
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "product.slides"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "image": {
-                      "required": [
-                        "id",
-                        "name",
-                        "hash",
-                        "mime",
-                        "size",
-                        "url",
-                        "provider"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "alternativeText": {
-                          "type": "string"
-                        },
-                        "caption": {
-                          "type": "string"
-                        },
-                        "width": {
-                          "type": "integer"
-                        },
-                        "height": {
-                          "type": "integer"
-                        },
-                        "formats": {
-                          "type": "object"
-                        },
-                        "hash": {
-                          "type": "string"
-                        },
-                        "ext": {
-                          "type": "string"
-                        },
-                        "mime": {
-                          "type": "string"
-                        },
-                        "size": {
-                          "type": "number"
-                        },
-                        "url": {
-                          "type": "string"
-                        },
-                        "previewUrl": {
-                          "type": "string"
-                        },
-                        "provider": {
-                          "type": "string"
-                        },
-                        "provider_metadata": {
-                          "type": "object"
-                        },
-                        "related": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "alt": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
-                }
-              ]
-            }
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "products": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "collections": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "products": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "details": {
-            "type": "string"
-          },
-          "directions": {
-            "type": "string"
-          },
-          "expiration": {
-            "type": "string"
-          },
-          "storage": {
-            "type": "string"
-          },
-          "volume_ml": {
-            "type": "number"
-          },
-          "volume_g": {
-            "type": "number"
-          },
-          "length_cm": {
-            "type": "number"
-          },
-          "width_cm": {
-            "type": "number"
-          },
-          "height_cm": {
-            "type": "number"
           }
         }
       },
-      "NewProduct": {
-        "required": [
-          "sku",
-          "barcode"
-        ],
+      "NewProducts-stactic": {
         "properties": {
           "name": {
             "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "price": {
-            "type": "integer"
-          },
-          "ingredients": {
-            "type": "string"
-          },
-          "sku": {
-            "type": "string"
-          },
-          "barcode": {
-            "type": "string"
-          },
-          "pid": {
-            "type": "uid"
-          },
-          "uses": {
-            "type": "string"
-          },
-          "warning": {
-            "type": "string"
-          },
-          "origin": {
-            "type": "string"
-          },
-          "slides": {
-            "type": "array",
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "__component": {
-                      "type": "string",
-                      "enum": [
-                        "product.slides"
-                      ]
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "image": {
-                      "required": [
-                        "id",
-                        "name",
-                        "hash",
-                        "mime",
-                        "size",
-                        "url",
-                        "provider"
-                      ],
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "alternativeText": {
-                          "type": "string"
-                        },
-                        "caption": {
-                          "type": "string"
-                        },
-                        "width": {
-                          "type": "integer"
-                        },
-                        "height": {
-                          "type": "integer"
-                        },
-                        "formats": {
-                          "type": "object"
-                        },
-                        "hash": {
-                          "type": "string"
-                        },
-                        "ext": {
-                          "type": "string"
-                        },
-                        "mime": {
-                          "type": "string"
-                        },
-                        "size": {
-                          "type": "number"
-                        },
-                        "url": {
-                          "type": "string"
-                        },
-                        "previewUrl": {
-                          "type": "string"
-                        },
-                        "provider": {
-                          "type": "string"
-                        },
-                        "provider_metadata": {
-                          "type": "object"
-                        },
-                        "related": {
-                          "type": "string"
-                        }
-                      }
-                    },
-                    "alt": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
-                }
-              ]
-            }
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "collections": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "details": {
-            "type": "string"
-          },
-          "directions": {
-            "type": "string"
-          },
-          "expiration": {
-            "type": "string"
-          },
-          "storage": {
-            "type": "string"
-          },
-          "volume_ml": {
-            "type": "number"
-          },
-          "volume_g": {
-            "type": "number"
-          },
-          "length_cm": {
-            "type": "number"
-          },
-          "width_cm": {
-            "type": "number"
-          },
-          "height_cm": {
-            "type": "number"
           }
         }
       },

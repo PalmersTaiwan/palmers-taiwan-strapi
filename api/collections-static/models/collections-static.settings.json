@@ -1,0 +1,16 @@
+{
+  "kind": "singleType",
+  "collectionName": "collections_statics",
+  "info": {
+    "name": "collectionsStatic"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

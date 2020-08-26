@@ -1,0 +1,16 @@
+{
+  "kind": "singleType",
+  "collectionName": "products_stactics",
+  "info": {
+    "name": "productsStactic"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
