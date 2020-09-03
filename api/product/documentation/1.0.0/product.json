@@ -528,70 +528,11 @@
           "brand": {
             "type": "string"
           },
-          "category_code": {
+          "collection": {
             "type": "string"
           },
-          "categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "products": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "collections": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "products": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
+          "collection_en": {
+            "type": "string"
           },
           "now_available": {
             "type": "boolean"
@@ -617,16 +558,7 @@
           "p_height": {
             "type": "number"
           },
-          "box_length": {
-            "type": "number"
-          },
-          "box_width": {
-            "type": "number"
-          },
-          "box_depth": {
-            "type": "number"
-          },
-          "p_weight": {
+          "weight": {
             "type": "number"
           },
           "origin": {
@@ -638,23 +570,14 @@
           "importer": {
             "type": "string"
           },
-          "price_ntd": {
+          "price": {
             "type": "integer"
           },
           "expiration": {
-            "type": "string"
+            "type": "integer"
           },
           "ingredient": {
             "type": "string"
-          },
-          "store_code": {
-            "type": "string"
-          },
-          "price_no_tax": {
-            "type": "number"
-          },
-          "price_whoesale": {
-            "type": "number"
           },
           "description": {
             "type": "string"
@@ -679,6 +602,40 @@
           },
           "warning": {
             "type": "string"
+          },
+          "collections": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "name_en": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "products": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -690,20 +647,11 @@
           "brand": {
             "type": "string"
           },
-          "category_code": {
+          "collection": {
             "type": "string"
           },
-          "categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "collections": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "collection_en": {
+            "type": "string"
           },
           "now_available": {
             "type": "boolean"
@@ -729,16 +677,7 @@
           "p_height": {
             "type": "number"
           },
-          "box_length": {
-            "type": "number"
-          },
-          "box_width": {
-            "type": "number"
-          },
-          "box_depth": {
-            "type": "number"
-          },
-          "p_weight": {
+          "weight": {
             "type": "number"
           },
           "origin": {
@@ -750,23 +689,14 @@
           "importer": {
             "type": "string"
           },
-          "price_ntd": {
+          "price": {
             "type": "integer"
           },
           "expiration": {
-            "type": "string"
+            "type": "integer"
           },
           "ingredient": {
             "type": "string"
-          },
-          "store_code": {
-            "type": "string"
-          },
-          "price_no_tax": {
-            "type": "number"
-          },
-          "price_whoesale": {
-            "type": "number"
           },
           "description": {
             "type": "string"
@@ -791,6 +721,12 @@
           },
           "warning": {
             "type": "string"
+          },
+          "collections": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
