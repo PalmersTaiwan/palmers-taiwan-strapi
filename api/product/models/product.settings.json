@@ -15,10 +15,10 @@
     "brand": {
       "type": "string"
     },
-    "collection": {
+    "p_collection": {
       "type": "string"
     },
-    "collection_en": {
+    "p_collection_en": {
       "type": "string"
     },
     "now_available": {
@@ -63,9 +63,6 @@
     "expiration": {
       "type": "integer"
     },
-    "metaDescription": {
-      "type": "richtext"
-    },
     "ingredient": {
       "type": "richtext"
     },
@@ -97,6 +94,9 @@
       "collection": "collection",
       "via": "products",
       "dominant": true
+    },
+    "metaDescription": {
+      "type": "richtext"
     }
   }
 }
