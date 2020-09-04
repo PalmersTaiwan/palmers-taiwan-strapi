@@ -1,8 +1,8 @@
 {
-  "kind": "singleType",
-  "collectionName": "contactuses",
+  "kind": "collectionType",
+  "collectionName": "news_posts",
   "info": {
-    "name": "contactUs"
+    "name": "newsPost"
   },
   "options": {
     "increments": true,

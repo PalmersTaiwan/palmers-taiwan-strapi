@@ -323,14 +323,20 @@
           "id": {
             "type": "string"
           },
-          "name": {
+          "title": {
+            "type": "string"
+          },
+          "metaDescription": {
             "type": "string"
           }
         }
       },
       "NewCollections-static": {
         "properties": {
-          "name": {
+          "title": {
+            "type": "string"
+          },
+          "metaDescription": {
             "type": "string"
           }
         }

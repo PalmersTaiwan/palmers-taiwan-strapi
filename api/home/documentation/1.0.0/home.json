@@ -320,12 +320,18 @@
           },
           "title": {
             "type": "string"
+          },
+          "metaDescription": {
+            "type": "string"
           }
         }
       },
       "NewHome": {
         "properties": {
           "title": {
+            "type": "string"
+          },
+          "metaDescription": {
             "type": "string"
           }
         }

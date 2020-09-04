@@ -325,12 +325,18 @@
           },
           "title": {
             "type": "string"
+          },
+          "metaDescription": {
+            "type": "string"
           }
         }
       },
       "NewNews-feed": {
         "properties": {
           "title": {
+            "type": "string"
+          },
+          "metaDescription": {
             "type": "string"
           }
         }

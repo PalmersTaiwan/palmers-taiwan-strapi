@@ -320,12 +320,18 @@
           },
           "title": {
             "type": "string"
+          },
+          "metaDescription": {
+            "type": "string"
           }
         }
       },
       "NewAbout": {
         "properties": {
           "title": {
+            "type": "string"
+          },
+          "metaDescription": {
             "type": "string"
           }
         }

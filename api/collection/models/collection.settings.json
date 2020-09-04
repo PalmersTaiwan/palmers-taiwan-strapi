@@ -15,6 +15,9 @@
     "name_en": {
       "type": "string"
     },
+    "metaDescription": {
+      "type": "richtext"
+    },
     "description": {
       "type": "richtext"
     },

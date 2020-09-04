@@ -576,6 +576,9 @@
           "expiration": {
             "type": "integer"
           },
+          "metaDescription": {
+            "type": "string"
+          },
           "ingredient": {
             "type": "string"
           },
@@ -617,6 +620,9 @@
                   "type": "string"
                 },
                 "name_en": {
+                  "type": "string"
+                },
+                "metaDescription": {
                   "type": "string"
                 },
                 "description": {
@@ -694,6 +700,9 @@
           },
           "expiration": {
             "type": "integer"
+          },
+          "metaDescription": {
+            "type": "string"
           },
           "ingredient": {
             "type": "string"

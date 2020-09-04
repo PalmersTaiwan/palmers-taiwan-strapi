@@ -63,6 +63,9 @@
     "expiration": {
       "type": "integer"
     },
+    "metaDescription": {
+      "type": "richtext"
+    },
     "ingredient": {
       "type": "richtext"
     },

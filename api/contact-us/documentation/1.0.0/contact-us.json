@@ -325,12 +325,18 @@
           },
           "title": {
             "type": "string"
+          },
+          "metaDescription": {
+            "type": "string"
           }
         }
       },
       "NewContact-us": {
         "properties": {
           "title": {
+            "type": "string"
+          },
+          "metaDescription": {
             "type": "string"
           }
         }

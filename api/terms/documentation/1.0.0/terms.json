@@ -321,6 +321,9 @@
           "title": {
             "type": "string"
           },
+          "metaDescription": {
+            "type": "string"
+          },
           "title_ConsumerProtectionAct": {
             "type": "string"
           },
@@ -331,9 +334,6 @@
             "type": "string"
           },
           "privacyPolicy": {
-            "type": "string"
-          },
-          "pageDescription": {
             "type": "string"
           }
         }
@@ -343,6 +343,9 @@
           "title": {
             "type": "string"
           },
+          "metaDescription": {
+            "type": "string"
+          },
           "title_ConsumerProtectionAct": {
             "type": "string"
           },
@@ -353,9 +356,6 @@
             "type": "string"
           },
           "privacyPolicy": {
-            "type": "string"
-          },
-          "pageDescription": {
             "type": "string"
           }
         }
