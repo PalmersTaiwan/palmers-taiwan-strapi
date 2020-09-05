@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "collections_statics",
+  "info": {
+    "name": "collectionsStatic"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "richtext"
+    }
+  }
+}

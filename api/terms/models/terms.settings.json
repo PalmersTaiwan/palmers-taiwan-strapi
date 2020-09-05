@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "terms",
+  "info": {
+    "name": "terms"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "richtext"
+    },
+    "title_ConsumerProtectionAct": {
+      "type": "string"
+    },
+    "consumerProtectionAct": {
+      "type": "richtext"
+    },
+    "title_privacyPolicy": {
+      "type": "string"
+    },
+    "privacyPolicy": {
+      "type": "richtext"
+    }
+  }
+}

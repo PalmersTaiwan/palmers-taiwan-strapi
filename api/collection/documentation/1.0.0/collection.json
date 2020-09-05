@@ -525,6 +525,12 @@
           "name": {
             "type": "string"
           },
+          "name_en": {
+            "type": "string"
+          },
+          "metaDescription": {
+            "type": "string"
+          },
           "description": {
             "type": "string"
           },
@@ -588,7 +594,210 @@
                 },
                 "related": {
                   "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
+              }
+            }
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "sku": {
+                  "type": "string"
+                },
+                "brand": {
+                  "type": "string"
+                },
+                "p_collection": {
+                  "type": "string"
+                },
+                "p_collection_en": {
+                  "type": "string"
+                },
+                "now_available": {
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "name_en": {
+                  "type": "string"
+                },
+                "barcode": {
+                  "type": "string"
+                },
+                "measurement": {
+                  "type": "string"
+                },
+                "p_length": {
+                  "type": "number"
+                },
+                "p_width": {
+                  "type": "number"
+                },
+                "p_height": {
+                  "type": "number"
+                },
+                "weight": {
+                  "type": "number"
+                },
+                "origin": {
+                  "type": "string"
+                },
+                "manufacture": {
+                  "type": "string"
+                },
+                "importer": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "integer"
+                },
+                "expiration": {
+                  "type": "integer"
+                },
+                "ingredient": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "detail": {
+                  "type": "string"
+                },
+                "feature": {
+                  "type": "string"
+                },
+                "skin_type": {
+                  "type": "string"
+                },
+                "uses": {
+                  "type": "string"
+                },
+                "direction": {
+                  "type": "string"
+                },
+                "storage": {
+                  "type": "string"
+                },
+                "warning": {
+                  "type": "string"
+                },
+                "collections": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "metaDescription": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "created_by": {
+            "required": [
+              "id",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "registrationToken": {
+                "type": "string"
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "roles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "blocked": {
+                "type": "boolean"
+              }
+            }
+          },
+          "updated_by": {
+            "required": [
+              "id",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "registrationToken": {
+                "type": "string"
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "roles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "blocked": {
+                "type": "boolean"
               }
             }
           }
@@ -599,7 +808,25 @@
           "name": {
             "type": "string"
           },
+          "name_en": {
+            "type": "string"
+          },
+          "metaDescription": {
+            "type": "string"
+          },
           "description": {
+            "type": "string"
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
             "type": "string"
           }
         }

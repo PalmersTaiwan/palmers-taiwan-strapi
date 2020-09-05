@@ -9,22 +9,94 @@
     "timestamps": true
   },
   "attributes": {
+    "sku": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "p_collection": {
+      "type": "string"
+    },
+    "p_collection_en": {
+      "type": "string"
+    },
+    "now_available": {
+      "type": "boolean"
+    },
     "name": {
       "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "barcode": {
+      "type": "string"
+    },
+    "measurement": {
+      "type": "string"
+    },
+    "p_length": {
+      "type": "decimal"
+    },
+    "p_width": {
+      "type": "decimal"
+    },
+    "p_height": {
+      "type": "decimal"
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "manufacture": {
+      "type": "string"
+    },
+    "importer": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "expiration": {
+      "type": "integer"
+    },
+    "ingredient": {
+      "type": "richtext"
     },
     "description": {
       "type": "richtext"
     },
-    "images": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
+    "detail": {
+      "type": "richtext"
+    },
+    "feature": {
+      "type": "richtext"
+    },
+    "skin_type": {
+      "type": "richtext"
+    },
+    "uses": {
+      "type": "richtext"
+    },
+    "direction": {
+      "type": "richtext"
+    },
+    "storage": {
+      "type": "richtext"
+    },
+    "warning": {
+      "type": "richtext"
+    },
+    "collections": {
+      "collection": "collection",
+      "via": "products",
+      "dominant": true
+    },
+    "metaDescription": {
+      "type": "richtext"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/products-stactic",
+      "handler": "products-stactic.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/products-stactic",
+      "handler": "products-stactic.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/products-stactic",
+      "handler": "products-stactic.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

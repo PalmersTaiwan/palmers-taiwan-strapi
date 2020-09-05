@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "news_feeds",
+  "info": {
+    "name": "newsFeed"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "richtext"
+    }
+  }
+}

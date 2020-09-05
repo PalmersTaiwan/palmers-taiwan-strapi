@@ -12,6 +12,12 @@
     "name": {
       "type": "string"
     },
+    "name_en": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "richtext"
+    },
     "description": {
       "type": "richtext"
     },
@@ -25,6 +31,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "products": {
+      "via": "collections",
+      "collection": "product"
     }
   }
 }
