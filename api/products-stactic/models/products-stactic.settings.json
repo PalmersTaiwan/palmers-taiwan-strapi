@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "products_stactics",
   "info": {
-    "name": "productsStactic"
+    "name": "產品-Static"
   },
   "options": {
     "increments": true,

@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "product"
+    "name": "產品"
   },
   "options": {
     "increments": true,

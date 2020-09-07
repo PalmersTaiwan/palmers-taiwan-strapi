@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "news_posts",
   "info": {
-    "name": "newsPost"
+    "name": "最新消息"
   },
   "options": {
     "increments": true,
