@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "news_feeds",
   "info": {
-    "name": "newsFeed"
+    "name": "最新消息-Static"
   },
   "options": {
     "increments": true,

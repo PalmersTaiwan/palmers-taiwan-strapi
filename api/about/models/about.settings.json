@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "abouts",
   "info": {
-    "name": "about"
+    "name": "關於我們"
   },
   "options": {
     "increments": true,

@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "returns",
   "info": {
-    "name": "return"
+    "name": "退貨須知"
   },
   "options": {
     "increments": true,
