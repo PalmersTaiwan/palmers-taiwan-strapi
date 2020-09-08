@@ -668,6 +668,12 @@
                 "expiration": {
                   "type": "integer"
                 },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "ingredient": {
                   "type": "string"
                 },
