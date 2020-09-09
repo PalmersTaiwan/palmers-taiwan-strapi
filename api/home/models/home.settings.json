@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "homes",
   "info": {
-    "name": "首頁"
+    "name": "home"
   },
   "options": {
     "increments": true,
