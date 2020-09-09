@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "abouts",
   "info": {
-    "name": "關於我們"
+    "name": "about"
   },
   "options": {
     "increments": true,
@@ -14,6 +14,17 @@
     },
     "metaDescription": {
       "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

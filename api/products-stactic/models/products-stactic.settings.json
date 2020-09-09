@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "products_stactics",
   "info": {
-    "name": "產品-Static"
+    "name": "productsStatic"
   },
   "options": {
     "increments": true,
@@ -14,6 +14,17 @@
     },
     "metaDescription": {
       "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

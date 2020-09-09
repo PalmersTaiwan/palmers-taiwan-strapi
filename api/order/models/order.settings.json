@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "orders",
   "info": {
-    "name": "訂單"
+    "name": "order"
   },
   "options": {
     "increments": true,

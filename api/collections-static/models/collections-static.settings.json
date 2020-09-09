@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "collections_statics",
   "info": {
-    "name": "產品系列-Static"
+    "name": "collectionsStatic"
   },
   "options": {
     "increments": true,
