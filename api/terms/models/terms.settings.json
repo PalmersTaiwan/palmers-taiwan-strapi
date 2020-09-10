@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "terms",
   "info": {
-    "name": "使用者條款"
+    "name": "terms"
   },
   "options": {
     "increments": true,
