@@ -12,8 +12,22 @@
     "title": {
       "type": "string"
     },
+    "metaTitle": {
+      "type": "richtext"
+    },
     "metaDescription": {
       "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     },
     "title_ConsumerProtectionAct": {
       "type": "string"

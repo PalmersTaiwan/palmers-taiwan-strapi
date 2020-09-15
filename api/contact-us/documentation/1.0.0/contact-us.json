@@ -326,7 +326,7 @@
           "title": {
             "type": "string"
           },
-          "pageTitle": {
+          "metaTitle": {
             "type": "string"
           },
           "metaDescription": {
@@ -506,7 +506,7 @@
           "title": {
             "type": "string"
           },
-          "pageTitle": {
+          "metaTitle": {
             "type": "string"
           },
           "metaDescription": {

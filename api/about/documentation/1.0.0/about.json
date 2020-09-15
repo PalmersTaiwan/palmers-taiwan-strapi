@@ -321,6 +321,9 @@
           "title": {
             "type": "string"
           },
+          "metaTitle": {
+            "type": "string"
+          },
           "metaDescription": {
             "type": "string"
           },
@@ -487,6 +490,9 @@
       "NewAbout": {
         "properties": {
           "title": {
+            "type": "string"
+          },
+          "metaTitle": {
             "type": "string"
           },
           "metaDescription": {
