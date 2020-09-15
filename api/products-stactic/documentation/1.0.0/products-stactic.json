@@ -326,6 +326,9 @@
           "title": {
             "type": "string"
           },
+          "metaTitle": {
+            "type": "string"
+          },
           "metaDescription": {
             "type": "string"
           },
@@ -492,6 +495,9 @@
       "NewProducts-stactic": {
         "properties": {
           "title": {
+            "type": "string"
+          },
+          "metaTitle": {
             "type": "string"
           },
           "metaDescription": {

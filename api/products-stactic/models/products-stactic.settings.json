@@ -12,6 +12,9 @@
     "title": {
       "type": "string"
     },
+    "metaTitle": {
+      "type": "richtext"
+    },
     "metaDescription": {
       "type": "richtext"
     },
