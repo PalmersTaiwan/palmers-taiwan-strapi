@@ -528,6 +528,9 @@
           "name_en": {
             "type": "string"
           },
+          "metaTitle": {
+            "type": "string"
+          },
           "metaDescription": {
             "type": "string"
           },
@@ -707,6 +710,9 @@
                     "type": "string"
                   }
                 },
+                "metaTitle": {
+                  "type": "string"
+                },
                 "metaDescription": {
                   "type": "string"
                 },
@@ -815,6 +821,9 @@
             "type": "string"
           },
           "name_en": {
+            "type": "string"
+          },
+          "metaTitle": {
             "type": "string"
           },
           "metaDescription": {

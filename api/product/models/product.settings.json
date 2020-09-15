@@ -102,9 +102,12 @@
       "type": "richtext"
     },
     "collections": {
-      "collection": "collection",
       "via": "products",
+      "collection": "collection",
       "dominant": true
+    },
+    "metaTitle": {
+      "type": "richtext"
     },
     "metaDescription": {
       "type": "richtext"
