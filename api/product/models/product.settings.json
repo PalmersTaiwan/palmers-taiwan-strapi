@@ -10,7 +10,8 @@
   },
   "attributes": {
     "sku": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "brand": {
       "type": "string"
