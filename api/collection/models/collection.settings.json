@@ -38,6 +38,17 @@
     "products": {
       "collection": "product",
       "via": "collections"
+    },
+    "featureImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
