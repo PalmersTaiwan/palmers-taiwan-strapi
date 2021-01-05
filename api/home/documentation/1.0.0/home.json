@@ -504,6 +504,9 @@
               "metaDescription": {
                 "type": "string"
               },
+              "product_suggestions": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
