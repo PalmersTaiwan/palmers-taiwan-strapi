@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "product"
+    "name": "product",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "sku": {
@@ -103,8 +105,8 @@
       "type": "richtext"
     },
     "collections": {
-      "via": "products",
       "collection": "collection",
+      "via": "products",
       "dominant": true
     },
     "metaTitle": {
@@ -112,6 +114,9 @@
     },
     "metaDescription": {
       "type": "richtext"
+    },
+    "product_suggestions": {
+      "collection": "product"
     }
   }
 }

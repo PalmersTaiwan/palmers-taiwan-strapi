@@ -36,8 +36,8 @@
       "required": false
     },
     "products": {
-      "collection": "product",
-      "via": "collections"
+      "via": "collections",
+      "collection": "product"
     },
     "featureImage": {
       "collection": "file",
