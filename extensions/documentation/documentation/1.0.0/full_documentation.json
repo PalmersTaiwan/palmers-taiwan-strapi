@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/20/2020 11:48:31 PM"
+    "x-generation-date": "01/05/2021 3:28:08 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7912,6 +7912,121 @@
                 }
               }
             }
+          },
+          "product_suggestions": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "sku": {
+                "type": "string"
+              },
+              "brand": {
+                "type": "string"
+              },
+              "p_collection": {
+                "type": "string"
+              },
+              "p_collection_en": {
+                "type": "string"
+              },
+              "now_available": {
+                "type": "boolean"
+              },
+              "name": {
+                "type": "string"
+              },
+              "name_en": {
+                "type": "string"
+              },
+              "barcode": {
+                "type": "string"
+              },
+              "measurement": {
+                "type": "string"
+              },
+              "p_length": {
+                "type": "number"
+              },
+              "p_width": {
+                "type": "number"
+              },
+              "p_height": {
+                "type": "number"
+              },
+              "weight": {
+                "type": "number"
+              },
+              "origin": {
+                "type": "string"
+              },
+              "manufacture": {
+                "type": "string"
+              },
+              "importer": {
+                "type": "string"
+              },
+              "price": {
+                "type": "integer"
+              },
+              "expiration": {
+                "type": "integer"
+              },
+              "images": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ingredient": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "detail": {
+                "type": "string"
+              },
+              "feature": {
+                "type": "string"
+              },
+              "skin_type": {
+                "type": "string"
+              },
+              "uses": {
+                "type": "string"
+              },
+              "direction": {
+                "type": "string"
+              },
+              "storage": {
+                "type": "string"
+              },
+              "warning": {
+                "type": "string"
+              },
+              "collections": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "metaTitle": {
+                "type": "string"
+              },
+              "metaDescription": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -7924,6 +8039,9 @@
             "type": "string"
           },
           "metaDescription": {
+            "type": "string"
+          },
+          "product_suggestions": {
             "type": "string"
           },
           "created_by": {
