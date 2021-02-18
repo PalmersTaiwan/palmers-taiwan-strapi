@@ -2,11 +2,13 @@
   "kind": "singleType",
   "collectionName": "abouts",
   "info": {
-    "name": "about"
+    "name": "about",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -19,6 +21,17 @@
       "type": "richtext"
     },
     "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "contentImages": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
